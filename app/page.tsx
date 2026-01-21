@@ -15,8 +15,8 @@ export default function HomePage() {
       <main>
         {siteConfig.homepageSections.hero.enabled && <HeroSection />}
         {siteConfig.homepageSections.services.enabled && <ServicesSection />}
-        {siteConfig.homepageSections.about.enabled && <AboutSection />}
         {siteConfig.homepageSections.featuredProducts.enabled && <FeaturedProductsSection />}
+        {siteConfig.homepageSections.about.enabled && <AboutSection />}
         {siteConfig.homepageSections.testimonials.enabled && <TestimonialsSection />}
         {siteConfig.homepageSections.contact.enabled && <ContactSection />}
       </main>

@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { faqData, faqPageContent } from "@/lib/data" // Import faqPageContent for the title and description
+import { getCardClass } from "@/lib/utils"
 
 export function FaqSection() {
   return (
@@ -37,7 +38,7 @@ export function FaqSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl glass-card"
+                className={`p-6 rounded-2xl ${getCardClass(index)}`}
               >
                 <AccordionItem value={`item-${index}`}>
                   <AccordionTrigger className="text-lg font-medium text-left">

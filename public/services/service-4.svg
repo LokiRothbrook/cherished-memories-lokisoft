@@ -1,19 +1,130 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
   <defs>
     <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#fdfbf9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5efe8;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="accent4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    <linearGradient id="coral4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8a4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b8c4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f5f0;stop-opacity:1" />
     </linearGradient>
   </defs>
+
+  <!-- Background -->
   <rect width="800" height="600" fill="url(#bg4)"/>
-  <rect x="50" y="50" width="700" height="500" rx="20" fill="none" stroke="url(#accent4)" stroke-width="2" stroke-dasharray="10,5" opacity="0.5"/>
-  <circle cx="400" cy="250" r="80" fill="url(#accent4)" opacity="0.2"/>
-  <path d="M370 230 L400 200 L430 230 L430 280 L370 280 Z" fill="url(#accent4)" opacity="0.8"/>
-  <rect x="385" y="250" width="30" height="30" fill="#1a1a2e"/>
-  <text x="400" y="380" font-family="system-ui, sans-serif" font-size="24" fill="#6366f1" text-anchor="middle" font-weight="600">Project 4</text>
-  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="16" fill="#a5b4fc" text-anchor="middle" opacity="0.7">Replace with your image</text>
+
+  <!-- Decorative background elements -->
+  <circle cx="680" cy="120" r="100" fill="#ece4f5" opacity="0.12"/>
+  <circle cx="120" cy="480" r="90" fill="#b8e0c8" opacity="0.1"/>
+  <circle cx="400" cy="300" r="200" fill="#e8a4a8" opacity="0.05"/>
+
+  <!-- Main envelope -->
+  <g transform="translate(400, 240)">
+    <!-- Envelope back -->
+    <rect x="-120" y="-70" width="240" height="160" rx="6" fill="url(#paper)" stroke="#e8a4a8" stroke-width="2" opacity="0.9"/>
+
+    <!-- Envelope flap (open) -->
+    <path d="M-120 -70 L0 40 L120 -70" fill="url(#paper)" stroke="#e8a4a8" stroke-width="2"/>
+
+    <!-- Inner shadow on flap -->
+    <path d="M-100 -60 L0 25 L100 -60" fill="#f5efe8" opacity="0.5"/>
+
+    <!-- Wax seal -->
+    <circle cx="0" cy="60" r="25" fill="url(#coral4)" opacity="0.8"/>
+    <circle cx="0" cy="60" r="20" fill="none" stroke="#d4a4a8" stroke-width="1" opacity="0.6"/>
+    <!-- Heart in seal -->
+    <path d="M0 -4 C0 -10 7 -14 12 -7 C17 -14 24 -10 24 -4 C24 6 12 14 12 14 C12 14 0 6 0 -4" transform="translate(-12, 56)" fill="#fdfbf9" opacity="0.7"/>
+  </g>
+
+  <!-- Prayer card - left -->
+  <g transform="translate(170, 260)">
+    <rect x="-50" y="-70" width="100" height="140" rx="4" fill="url(#paper)" stroke="#e8a4a8" stroke-width="1.5"/>
+    <!-- Cross symbol -->
+    <rect x="-3" y="-50" width="6" height="40" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <rect x="-15" y="-40" width="30" height="6" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <!-- Text lines -->
+    <line x1="-30" y1="10" x2="30" y2="10" stroke="#5a4a55" stroke-width="1" opacity="0.2"/>
+    <line x1="-25" y1="25" x2="25" y2="25" stroke="#5a4a55" stroke-width="1" opacity="0.2"/>
+    <line x1="-30" y1="40" x2="30" y2="40" stroke="#5a4a55" stroke-width="1" opacity="0.2"/>
+    <!-- Decorative border -->
+    <rect x="-45" y="-65" width="90" height="130" rx="2" fill="none" stroke="#ece4f5" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- Program/booklet - right -->
+  <g transform="translate(630, 260)">
+    <!-- Back page -->
+    <rect x="-45" y="-65" width="90" height="130" rx="3" fill="#f5efe8"/>
+    <!-- Front page (slightly offset) -->
+    <rect x="-50" y="-70" width="90" height="130" rx="3" fill="url(#paper)" stroke="#e8a4a8" stroke-width="1.5"/>
+    <!-- Floral decoration at top -->
+    <g transform="translate(0, -45)">
+      <ellipse cx="0" cy="-8" rx="5" ry="8" fill="#e8a4a8" opacity="0.5"/>
+      <ellipse cx="8" cy="-3" rx="5" ry="8" fill="#e8a4a8" opacity="0.45" transform="rotate(60)"/>
+      <ellipse cx="-8" cy="-3" rx="5" ry="8" fill="#e8a4a8" opacity="0.45" transform="rotate(-60)"/>
+      <circle cx="0" cy="0" r="4" fill="#d4a4a8" opacity="0.6"/>
+    </g>
+    <!-- Text placeholder lines -->
+    <rect x="-30" y="-15" width="60" height="4" rx="1" fill="#5a4a55" opacity="0.15"/>
+    <rect x="-25" y="0" width="50" height="3" rx="1" fill="#5a4a55" opacity="0.1"/>
+    <rect x="-20" y="15" width="40" height="3" rx="1" fill="#5a4a55" opacity="0.1"/>
+    <!-- Decorative line -->
+    <line x1="-30" y1="35" x2="30" y2="35" stroke="#b8e0c8" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Thank you cards stack -->
+  <g transform="translate(300, 380)">
+    <rect x="-35" y="-20" width="70" height="45" rx="3" fill="#f5efe8" transform="rotate(-5)"/>
+    <rect x="-35" y="-25" width="70" height="45" rx="3" fill="url(#paper)" stroke="#b8e0c8" stroke-width="1"/>
+    <text x="0" y="0" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#5a4a55" opacity="0.5">Thank You</text>
+  </g>
+
+  <!-- Announcement card -->
+  <g transform="translate(500, 380)">
+    <rect x="-40" y="-25" width="80" height="50" rx="3" fill="url(#paper)" stroke="#ece4f5" stroke-width="1.5"/>
+    <!-- Decorative corner -->
+    <path d="M35 -25 L35 -10 L20 -25 Z" fill="#e8a4a8" opacity="0.3"/>
+    <!-- Text lines -->
+    <line x1="-25" y1="-5" x2="25" y2="-5" stroke="#5a4a55" stroke-width="1" opacity="0.15"/>
+    <line x1="-20" y1="5" x2="20" y2="5" stroke="#5a4a55" stroke-width="1" opacity="0.15"/>
+  </g>
+
+  <!-- Pen/quill decoration -->
+  <g transform="translate(200, 150)">
+    <path d="M0 0 L30 -40 L35 -35 L10 0 Z" fill="#5a4a55" opacity="0.2"/>
+    <path d="M32 -38 Q40 -50 35 -55 L30 -45 Z" fill="#e8a4a8" opacity="0.4"/>
+  </g>
+
+  <!-- Decorative flowers -->
+  <g transform="translate(680, 480)">
+    <ellipse cx="0" cy="-10" rx="6" ry="10" fill="#b8e0c8" opacity="0.5"/>
+    <ellipse cx="9" cy="-3" rx="6" ry="10" fill="#b8e0c8" opacity="0.45" transform="rotate(72)"/>
+    <ellipse cx="5" cy="8" rx="6" ry="10" fill="#b8e0c8" opacity="0.4" transform="rotate(144)"/>
+    <ellipse cx="-5" cy="8" rx="6" ry="10" fill="#b8e0c8" opacity="0.45" transform="rotate(216)"/>
+    <ellipse cx="-9" cy="-3" rx="6" ry="10" fill="#b8e0c8" opacity="0.5" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="5" fill="#a0d4b4" opacity="0.7"/>
+  </g>
+
+  <!-- Small hearts -->
+  <path d="M130 130 C130 124 136 120 142 126 C148 120 154 124 154 130 C154 139 142 147 142 147 C142 147 130 139 130 130" fill="#e8a4a8" opacity="0.2"/>
+  <path d="M660 340 C660 336 664 333 668 337 C672 333 676 336 676 340 C676 346 668 351 668 351 C668 351 660 346 660 340" fill="#ece4f5" opacity="0.3"/>
+
+  <!-- Sparkles -->
+  <g transform="translate(120, 200)">
+    <path d="M0 -5 L1 -1 L5 0 L1 1 L0 5 L-1 1 L-5 0 L-1 -1 Z" fill="#e8a4a8" opacity="0.4"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#5a4a55" font-weight="500">
+    Memorial Stationery
+  </text>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5a4a55" opacity="0.6">
+    Elegant cards, programs, and announcements
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="280" y1="550" x2="520" y2="550" stroke="#e8a4a8" stroke-width="2" opacity="0.4"/>
 </svg>

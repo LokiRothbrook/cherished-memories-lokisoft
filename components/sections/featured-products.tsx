@@ -55,9 +55,6 @@ export function FeaturedProductsSection() {
         transition={{ duration: 10, repeat: Infinity }}
       />
 
-      {/* Laser wave accent */}
-      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-
       <div ref={ref} className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -66,19 +63,6 @@ export function FeaturedProductsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          {/* Section Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ delay: 0.1 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6"
-          >
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">
-              {featuredProductsSectionContent.sectionTitle}
-            </span>
-          </motion.div>
-
           {/* Title */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             <span className="gradient-text">{featuredProductsSectionContent.title}</span>

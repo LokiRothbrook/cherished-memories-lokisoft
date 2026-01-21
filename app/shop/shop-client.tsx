@@ -18,6 +18,7 @@ import { ProductFilters, type FilterState } from "@/components/shop/ProductFilte
 import { getActiveProducts, shopPageContent, type Product } from "@/lib/data/products"
 import { getCategoryWithDescendants } from "@/lib/data/categories"
 import { Button } from "@/components/ui/button"
+import { FloralBackground } from "@/components/ui/floral-background"
 
 const PRODUCTS_PER_PAGE = 12
 
@@ -108,6 +109,7 @@ export default function ShopPageClient() {
         {/* Hero Section */}
         <section className="relative py-16 sm:py-24 overflow-hidden">
           <div className="absolute inset-0 water-pattern" />
+          <FloralBackground />
           <motion.div
             className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[150px]"
             animate={{ scale: [1, 1.2, 1] }}
@@ -120,17 +122,6 @@ export default function ShopPageClient() {
           />
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6">
-                <ShoppingBag className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">{shopPageContent.title}</span>
-              </div>
-            </motion.div>
-
             <motion.h1
               className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
               initial={{ opacity: 0, y: 20 }}

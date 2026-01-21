@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer"
 import { motion } from "framer-motion"
 import { FaqSection } from "@/components/sections/faq-section"
 import { CtaSection } from "@/components/sections/cta"
+import { FloralBackground } from "@/components/ui/floral-background"
 
 export default function FaqClient() {
   if (!siteConfig.pages.faq.enabled) {
@@ -19,6 +20,7 @@ export default function FaqClient() {
       <main className="pt-20">
         <section className="relative py-24 overflow-hidden">
           <div className="absolute inset-0 water-pattern" />
+          <FloralBackground />
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}

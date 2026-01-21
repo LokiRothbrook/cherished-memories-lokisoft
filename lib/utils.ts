@@ -136,3 +136,13 @@ export function calculatePriceWithVariants(
 ): number {
   return basePrice + variantModifiers.reduce((sum, mod) => sum + mod, 0)
 }
+
+/**
+ * Get card class based on index to cycle through different card colors
+ * @param index - The index of the card (0-based)
+ * @returns CSS class name for the card (hero-card-1 through hero-card-6)
+ */
+export function getCardClass(index: number): string {
+  const cardClasses = ['hero-card-1', 'hero-card-2', 'hero-card-3', 'hero-card-4', 'hero-card-5', 'hero-card-6']
+  return cardClasses[index % cardClasses.length]
+}

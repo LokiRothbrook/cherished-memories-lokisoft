@@ -1,19 +1,96 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
   <defs>
     <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#fdfbf9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5efe8;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    <linearGradient id="coral1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8a4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b8c4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lavender1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ece4f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d8cce8;stop-opacity:1" />
     </linearGradient>
   </defs>
+
+  <!-- Background -->
   <rect width="800" height="600" fill="url(#bg1)"/>
-  <rect x="50" y="50" width="700" height="500" rx="20" fill="none" stroke="url(#accent1)" stroke-width="2" stroke-dasharray="10,5" opacity="0.5"/>
-  <circle cx="400" cy="250" r="80" fill="url(#accent1)" opacity="0.2"/>
-  <path d="M370 230 L400 200 L430 230 L430 280 L370 280 Z" fill="url(#accent1)" opacity="0.8"/>
-  <rect x="385" y="250" width="30" height="30" fill="#1a1a2e"/>
-  <text x="400" y="380" font-family="system-ui, sans-serif" font-size="24" fill="#6366f1" text-anchor="middle" font-weight="600">Project 1</text>
-  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="16" fill="#a5b4fc" text-anchor="middle" opacity="0.7">Replace with your image</text>
+
+  <!-- Decorative background circles -->
+  <circle cx="650" cy="100" r="120" fill="#e8a4a8" opacity="0.08"/>
+  <circle cx="150" cy="500" r="100" fill="#b8e0c8" opacity="0.08"/>
+  <circle cx="400" cy="300" r="180" fill="#ece4f5" opacity="0.1"/>
+
+  <!-- Film reel decoration - left -->
+  <g transform="translate(120, 280)">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#e8a4a8" stroke-width="3" opacity="0.3"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#e8a4a8" stroke-width="2" opacity="0.2"/>
+    <circle cx="0" cy="0" r="15" fill="#e8a4a8" opacity="0.3"/>
+    <!-- Film holes -->
+    <circle cx="0" cy="-35" r="6" fill="#e8a4a8" opacity="0.4"/>
+    <circle cx="30" cy="-17" r="6" fill="#e8a4a8" opacity="0.4"/>
+    <circle cx="30" cy="17" r="6" fill="#e8a4a8" opacity="0.4"/>
+    <circle cx="0" cy="35" r="6" fill="#e8a4a8" opacity="0.4"/>
+    <circle cx="-30" cy="17" r="6" fill="#e8a4a8" opacity="0.4"/>
+    <circle cx="-30" cy="-17" r="6" fill="#e8a4a8" opacity="0.4"/>
+  </g>
+
+  <!-- Main content - Video/Play symbol -->
+  <g transform="translate(400, 260)">
+    <!-- Screen/frame -->
+    <rect x="-140" y="-100" width="280" height="180" rx="12" fill="url(#lavender1)" opacity="0.5"/>
+    <rect x="-130" y="-90" width="260" height="160" rx="8" fill="#fdfbf9"/>
+
+    <!-- Photo montage suggestion -->
+    <rect x="-110" y="-70" width="70" height="50" rx="4" fill="#e8a4a8" opacity="0.3"/>
+    <rect x="-30" y="-70" width="70" height="50" rx="4" fill="#b8e0c8" opacity="0.3"/>
+    <rect x="50" y="-70" width="70" height="50" rx="4" fill="#ece4f5" opacity="0.5"/>
+
+    <!-- Play button -->
+    <circle cx="0" cy="20" r="35" fill="url(#coral1)" opacity="0.9"/>
+    <polygon points="10,-12 10,12 -8,0" transform="translate(2, 20)" fill="#fdfbf9"/>
+  </g>
+
+  <!-- Film strip decoration - right side -->
+  <g transform="translate(620, 180)">
+    <rect x="0" y="0" width="60" height="200" rx="4" fill="#5a4a55" opacity="0.1"/>
+    <rect x="8" y="10" width="12" height="8" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <rect x="8" y="30" width="12" height="8" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <rect x="8" y="50" width="12" height="8" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <rect x="8" y="70" width="12" height="8" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <rect x="40" y="10" width="12" height="8" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <rect x="40" y="30" width="12" height="8" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <rect x="40" y="50" width="12" height="8" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <rect x="40" y="70" width="12" height="8" rx="1" fill="#e8a4a8" opacity="0.5"/>
+    <!-- Frame previews -->
+    <rect x="22" y="12" width="16" height="12" rx="1" fill="#b8e0c8" opacity="0.4"/>
+    <rect x="22" y="32" width="16" height="12" rx="1" fill="#ece4f5" opacity="0.5"/>
+    <rect x="22" y="52" width="16" height="12" rx="1" fill="#e8a4a8" opacity="0.3"/>
+  </g>
+
+  <!-- Hearts floating -->
+  <path d="M180 150 C180 140 190 130 200 140 C210 130 220 140 220 150 C220 165 200 180 200 180 C200 180 180 165 180 150" fill="#e8a4a8" opacity="0.25"/>
+  <path d="M600 420 C600 414 606 408 612 414 C618 408 624 414 624 420 C624 429 612 438 612 438 C612 438 600 429 600 420" fill="#e8a4a8" opacity="0.2"/>
+
+  <!-- Decorative flowers -->
+  <g transform="translate(700, 500)">
+    <ellipse cx="0" cy="-12" rx="6" ry="10" fill="#e8a4a8" opacity="0.4"/>
+    <ellipse cx="10" cy="-4" rx="6" ry="10" fill="#e8a4a8" opacity="0.35" transform="rotate(72)"/>
+    <ellipse cx="6" cy="9" rx="6" ry="10" fill="#e8a4a8" opacity="0.3" transform="rotate(144)"/>
+    <ellipse cx="-6" cy="9" rx="6" ry="10" fill="#e8a4a8" opacity="0.35" transform="rotate(216)"/>
+    <ellipse cx="-10" cy="-4" rx="6" ry="10" fill="#e8a4a8" opacity="0.4" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="5" fill="#d4a4a8" opacity="0.5"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#5a4a55" font-weight="500">
+    Custom Memorial Videos
+  </text>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5a4a55" opacity="0.6">
+    A beautiful tribute to celebrate a life
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="300" y1="550" x2="500" y2="550" stroke="#e8a4a8" stroke-width="2" opacity="0.4"/>
 </svg>

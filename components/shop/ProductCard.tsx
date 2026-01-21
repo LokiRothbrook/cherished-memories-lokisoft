@@ -19,7 +19,7 @@ import { motion } from "framer-motion"
 import { ShoppingCart, Package, Download } from "lucide-react"
 import type { Product } from "@/lib/data/products"
 import { getCategoryById } from "@/lib/data/categories"
-import { cn, formatPrice, getStockStatus, getProductImage, isProductInStock } from "@/lib/utils"
+import { cn, formatPrice, getStockStatus, getProductImage, isProductInStock, getCardClass } from "@/lib/utils"
 import { useCart } from "@/lib/context/cart-context"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -59,7 +59,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
       className="group"
     >
       <Link href={`/shop/${product.slug}`} className="block h-full">
-        <div className="relative h-full rounded-2xl glass-card overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5">
+        <div className={cn("relative h-full rounded-2xl overflow-hidden transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5", getCardClass(index))}>
           {/* Hover glow overlay */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 

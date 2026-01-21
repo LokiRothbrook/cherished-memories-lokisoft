@@ -16,6 +16,7 @@ import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { CtaSection } from "@/components/sections/cta"
 import { getIcon } from "@/lib/icon-map"
+import { getCardClass } from "@/lib/utils"
 
 interface ServicePageContentProps {
   service: Omit<typeof services[number], 'icon'> & { iconName: string };
@@ -182,7 +183,7 @@ export function ServicePageContent({ service, prevService, nextService }: Servic
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="p-6 rounded-2xl glass-card hover:border-primary/30 transition-all group"
+                  className={`p-6 rounded-2xl ${getCardClass(index)} hover:border-primary/30 transition-all group`}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
                     <CheckCircle className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />

@@ -1,19 +1,113 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
   <defs>
     <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#fdfbf9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5efe8;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    <linearGradient id="coral2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8a4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b8c4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mint2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8e0c8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a0d4b4;stop-opacity:1" />
     </linearGradient>
   </defs>
+
+  <!-- Background -->
   <rect width="800" height="600" fill="url(#bg2)"/>
-  <rect x="50" y="50" width="700" height="500" rx="20" fill="none" stroke="url(#accent2)" stroke-width="2" stroke-dasharray="10,5" opacity="0.5"/>
-  <circle cx="400" cy="250" r="80" fill="url(#accent2)" opacity="0.2"/>
-  <path d="M370 230 L400 200 L430 230 L430 280 L370 280 Z" fill="url(#accent2)" opacity="0.8"/>
-  <rect x="385" y="250" width="30" height="30" fill="#1a1a2e"/>
-  <text x="400" y="380" font-family="system-ui, sans-serif" font-size="24" fill="#6366f1" text-anchor="middle" font-weight="600">Project 2</text>
-  <text x="400" y="420" font-family="system-ui, sans-serif" font-size="16" fill="#a5b4fc" text-anchor="middle" opacity="0.7">Replace with your image</text>
+
+  <!-- Decorative background elements -->
+  <circle cx="680" cy="120" r="100" fill="#ece4f5" opacity="0.15"/>
+  <circle cx="120" cy="480" r="80" fill="#e8a4a8" opacity="0.1"/>
+  <circle cx="400" cy="300" r="200" fill="#b8e0c8" opacity="0.06"/>
+
+  <!-- Candles on left -->
+  <g transform="translate(140, 320)">
+    <rect x="0" y="0" width="16" height="60" rx="2" fill="#fdfbf9" stroke="#e8a4a8" stroke-width="1" opacity="0.8"/>
+    <ellipse cx="8" cy="-8" rx="6" ry="10" fill="#f5c842" opacity="0.7"/>
+    <ellipse cx="8" cy="-10" rx="3" ry="5" fill="#ffeaa7" opacity="0.9"/>
+  </g>
+  <g transform="translate(165, 340)">
+    <rect x="0" y="0" width="14" height="50" rx="2" fill="#fdfbf9" stroke="#e8a4a8" stroke-width="1" opacity="0.8"/>
+    <ellipse cx="7" cy="-8" rx="5" ry="8" fill="#f5c842" opacity="0.6"/>
+    <ellipse cx="7" cy="-9" rx="2.5" ry="4" fill="#ffeaa7" opacity="0.8"/>
+  </g>
+
+  <!-- Main content - Calendar with heart -->
+  <g transform="translate(400, 240)">
+    <!-- Calendar base -->
+    <rect x="-100" y="-80" width="200" height="180" rx="12" fill="#fdfbf9" stroke="#e8a4a8" stroke-width="2"/>
+
+    <!-- Calendar header -->
+    <rect x="-100" y="-80" width="200" height="45" rx="12" fill="url(#coral2)" opacity="0.8"/>
+    <rect x="-100" y="-50" width="200" height="15" fill="url(#coral2)" opacity="0.8"/>
+
+    <!-- Calendar rings -->
+    <circle cx="-60" cy="-80" r="6" fill="#5a4a55" opacity="0.3"/>
+    <circle cx="60" cy="-80" r="6" fill="#5a4a55" opacity="0.3"/>
+
+    <!-- Month text -->
+    <text x="0" y="-50" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#fdfbf9" font-weight="500">
+      In Loving Memory
+    </text>
+
+    <!-- Heart in center -->
+    <path d="M0 20 C0 0 20 -15 35 5 C50 -15 70 0 70 20 C70 50 35 75 35 75 C35 75 0 50 0 20" transform="translate(-35, 0)" fill="url(#coral2)" opacity="0.6"/>
+
+    <!-- Calendar dots/dates suggestion -->
+    <g transform="translate(-70, 10)">
+      <circle cx="0" cy="60" r="4" fill="#b8e0c8" opacity="0.5"/>
+      <circle cx="25" cy="60" r="4" fill="#ece4f5" opacity="0.5"/>
+      <circle cx="50" cy="60" r="4" fill="#e8a4a8" opacity="0.4"/>
+      <circle cx="75" cy="60" r="4" fill="#b8e0c8" opacity="0.5"/>
+      <circle cx="100" cy="60" r="4" fill="#ece4f5" opacity="0.5"/>
+      <circle cx="125" cy="60" r="4" fill="#e8a4a8" opacity="0.4"/>
+    </g>
+  </g>
+
+  <!-- Floral arrangements - right side -->
+  <g transform="translate(620, 280)">
+    <!-- Vase -->
+    <path d="M-20 40 Q-25 0 -15 -20 L15 -20 Q25 0 20 40 Z" fill="url(#mint2)" opacity="0.6"/>
+    <!-- Flowers -->
+    <g transform="translate(0, -40)">
+      <ellipse cx="0" cy="-15" rx="8" ry="12" fill="#e8a4a8" opacity="0.7"/>
+      <ellipse cx="12" cy="-5" rx="8" ry="12" fill="#e8a4a8" opacity="0.6" transform="rotate(50)"/>
+      <ellipse cx="-12" cy="-5" rx="8" ry="12" fill="#e8a4a8" opacity="0.6" transform="rotate(-50)"/>
+      <circle cx="0" cy="0" r="6" fill="#d4a4a8" opacity="0.8"/>
+    </g>
+    <g transform="translate(-15, -50)">
+      <ellipse cx="0" cy="-10" rx="6" ry="9" fill="#ece4f5" opacity="0.7"/>
+      <ellipse cx="8" cy="-4" rx="6" ry="9" fill="#ece4f5" opacity="0.6" transform="rotate(60)"/>
+      <ellipse cx="-8" cy="-4" rx="6" ry="9" fill="#ece4f5" opacity="0.6" transform="rotate(-60)"/>
+      <circle cx="0" cy="0" r="4" fill="#d8cce8" opacity="0.8"/>
+    </g>
+    <!-- Leaves -->
+    <path d="M-5 -20 Q-20 -40 -10 -60" stroke="#b8e0c8" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M5 -25 Q20 -50 15 -65" stroke="#b8e0c8" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Dove/bird silhouette -->
+  <g transform="translate(180, 140)">
+    <path d="M0 0 Q10 -10 25 -5 Q35 -8 40 0 Q35 5 25 3 Q15 8 5 5 Q-5 8 -10 0 Z" fill="#ece4f5" opacity="0.5"/>
+  </g>
+
+  <!-- Butterfly -->
+  <g transform="translate(640, 150)">
+    <ellipse cx="-10" cy="0" rx="12" ry="8" fill="#e8a4a8" opacity="0.4" transform="rotate(-20)"/>
+    <ellipse cx="10" cy="0" rx="12" ry="8" fill="#e8a4a8" opacity="0.4" transform="rotate(20)"/>
+    <ellipse cx="0" cy="0" rx="2" ry="6" fill="#5a4a55" opacity="0.3"/>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="480" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#5a4a55" font-weight="500">
+    Celebration of Life Events
+  </text>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#5a4a55" opacity="0.6">
+    Thoughtful planning for meaningful gatherings
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="280" y1="550" x2="520" y2="550" stroke="#e8a4a8" stroke-width="2" opacity="0.4"/>
 </svg>

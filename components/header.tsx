@@ -9,6 +9,7 @@ import {
   Menu,
   X,
   ChevronDown,
+  ChevronUp,
   Sparkles,
   Facebook,
   Instagram,
@@ -107,7 +108,12 @@ export function Header() {
       )}
     >
       {/* Background blur layer for the header */}
-      <div className="absolute inset-0 -z-10 bg-transparent glass" />
+      <div 
+        className="absolute inset-0 -z-10 backdrop-blur-xl"
+        style={{
+          background: 'linear-gradient(135deg, oklch(0.98 0.02 350 / 0.7) 0%, oklch(0.96 0.03 340 / 0.6) 100%)',
+        }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -130,13 +136,13 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
-              <div key={item.label} ref={item.hasDropdown ? servicesRef : undefined} className="relative">
+              <div key={item.label} ref={item.hasDropdown ? servicesRef : undefined} className="relative text-primary">
                 {item.hasDropdown ? (
                   <button
                     onClick={() => setIsServicesOpen(!isServicesOpen)}
                     className={cn(
-                      "flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap",
-                      "hover:bg-primary/10 hover:text-primary",
+                      "flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all whitespace-nowrap text-primary",
+                      "hover:bg-primary/10",
                       isServicesOpen && "bg-primary/10 text-primary"
                     )}
                   >
@@ -145,13 +151,13 @@ export function Header() {
                       animate={{ rotate: isServicesOpen ? 180 : 0 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <ChevronDown className="w-4 h-4" />
+                      <ChevronUp className="w-4 h-4" />
                     </motion.div>
                   </button>
                 ) : (
                   <Link
                     href={item.href}
-                    className="px-4 py-2 rounded-lg text-sm font-medium transition-all hover:bg-primary/10 hover:text-primary whitespace-nowrap"
+                    className="px-4 py-2 rounded-lg text-sm font-medium transition-all text-primary hover:bg-primary/10 whitespace-nowrap"
                   >
                     {item.label}
                   </Link>
@@ -165,9 +171,17 @@ export function Header() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 10, scale: 0.95 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[700px] p-6 rounded-2xl glass-card shadow-2xl bg-card/80"
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[700px] p-6 rounded-2xl shadow-2xl backdrop-blur-xl"
+                      style={{
+                        background: 'linear-gradient(135deg, oklch(0.98 0.02 260 / 0.85) 0%, oklch(0.96 0.03 250 / 0.75) 100%)',
+                      }}
                     >
-                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-6 rotate-45 bg-card border-l border-t border-border" />
+                      <div 
+                        className="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-6 rotate-45 border-l border-t border-border"
+                        style={{
+                          background: 'linear-gradient(135deg, oklch(0.98 0.02 260 / 0.85) 0%, oklch(0.96 0.03 250 / 0.75) 100%)',
+                        }}
+                      />
                       <div className="relative">
                         <div className="flex items-center justify-between mb-4">
                           <h3 className="text-lg font-semibold">{headerContent.servicesDropdown.title}</h3>
@@ -223,7 +237,7 @@ export function Header() {
 
             {/* Cart Indicator */}
             {siteConfig.pages.cart.enabled && (
-              <CartIndicator className="hidden sm:flex" />
+              <CartIndicator className="hidden sm:flex text-primary hover:bg-primary/10" />
             )}
 
             {/* Divider */}
@@ -267,9 +281,17 @@ export function Header() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 10, scale: 0.95 }}
                     transition={{ duration: 0.2 }}
-                    className="absolute top-full right-0 mt-2 w-72 p-4 rounded-2xl glass-card shadow-2xl backdrop-blur-xl bg-card/80"
+                    className="absolute top-full right-0 mt-2 w-72 p-4 rounded-2xl shadow-2xl backdrop-blur-xl text-primary"
+                    style={{
+                      background: 'linear-gradient(135deg, oklch(0.98 0.02 260 / 0.85) 0%, oklch(0.96 0.03 250 / 0.75) 100%)',
+                    }}
                   >
-                    <div className="absolute -top-3 right-4 w-6 h-6 rotate-45 bg-card border-l border-t border-border" />
+                    <div 
+                      className="absolute -top-3 right-4 w-6 h-6 rotate-45 border-l border-t border-border"
+                      style={{
+                        background: 'linear-gradient(135deg, oklch(0.98 0.02 260 / 0.85) 0%, oklch(0.96 0.03 250 / 0.75) 100%)',
+                      }}
+                    />
                     <div className="relative">
                       <h3 className="text-sm font-semibold mb-3">{headerContent.locationDropdown.title}</h3>
 

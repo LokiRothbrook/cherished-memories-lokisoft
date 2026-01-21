@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react"
 import { services, servicesSectionContent } from "@/lib/data"
 import { Button } from "@/components/ui/button"
 import { getIcon } from "@/lib/icon-map"
+import { getCardClass } from "@/lib/utils"
 
 export function ServicesSection() {
   const ref = React.useRef<HTMLDivElement>(null)
@@ -55,7 +56,7 @@ export function ServicesSection() {
                 transition={{ duration: 0.5, delay: 0.1 * index }}
               >
                 <Link href={`/services/${service.id}`} className="group block h-full">
-                  <div className="relative h-full p-6 rounded-2xl glass-card hover:border-primary/50 transition-all duration-300 overflow-hidden">
+                  <div className={`relative h-full p-6 rounded-2xl ${getCardClass(index)} hover:border-primary/50 transition-all duration-300 overflow-hidden`}>
                     {/* Hover Glow */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 

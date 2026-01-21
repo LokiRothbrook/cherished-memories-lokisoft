@@ -17,6 +17,7 @@ import { CartSummary } from "@/components/cart/CartSummary"
 import { useCart } from "@/lib/context/cart-context"
 import { cartPageContent } from "@/lib/data/cart"
 import { Button } from "@/components/ui/button"
+import { FloralBackground } from "@/components/ui/floral-background"
 
 export default function CartPageClient() {
   const { cart, isHydrated } = useCart()
@@ -55,6 +56,7 @@ export default function CartPageClient() {
         {/* Hero Section */}
         <section className="relative py-12 sm:py-16 overflow-hidden">
           <div className="absolute inset-0 water-pattern" />
+          <FloralBackground />
           <motion.div
             className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-primary/10 blur-[120px]"
             animate={{ scale: [1, 1.1, 1] }}
@@ -65,7 +67,7 @@ export default function CartPageClient() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="flex items-center gap-3"
+              className="flex flex-col items-center justify-center text-center gap-4"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                 <ShoppingCart className="w-6 h-6 text-primary" />

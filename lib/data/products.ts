@@ -162,10 +162,7 @@ export const products: Product[] = [
     shortDescription: "A beautiful, personalized box to store precious memories.",
     description: "Our handcrafted wooden memory boxes are perfect for keeping mementos, photos, and letters. Each box can be custom engraved with names, dates, or a special message, making it a unique and cherished keepsake for memorial items or celebrating special occasions.",
     price: 85.00,
-    images: [
-      "/public/products/memory-box-1.svg",
-      "/public/products/memory-box-2.svg"
-    ],
+    images: [],
     categoryId: "memorabilia",
     subcategoryId: "memorial-items",
     productType: "physical",
@@ -203,10 +200,7 @@ export const products: Product[] = [
     shortDescription: "Preserve your cherished photos in a beautifully crafted album.",
     description: "Our custom photo albums are made with high-quality linen covers and archival-safe pages, perfect for preserving your most treasured photographs. Personalize the cover with embossed text for a truly special touch, ideal for wedding memories or family histories.",
     price: 60.00,
-    images: [
-      "/public/products/photo-album-1.svg",
-      "/public/products/photo-album-2.svg"
-    ],
+    images: [],
     categoryId: "memorabilia",
     subcategoryId: "celebration-items",
     productType: "physical",
@@ -237,9 +231,7 @@ export const products: Product[] = [
     shortDescription: "A soothing light to remember and honor a loved one.",
     description: "Our personalized memorial candles provide a gentle glow and a comforting presence. Each candle can be customized with a name, date, and a short message, making it a thoughtful tribute for any home or service. Made with natural soy wax and essential oils.",
     price: 35.00,
-    images: [
-      "/public/products/candle-1.svg"
-    ],
+    images: [],
     categoryId: "memorabilia",
     subcategoryId: "home-decor",
     productType: "physical",
@@ -269,9 +261,7 @@ export const products: Product[] = [
     shortDescription: "A professional, custom-animated video to honor a life.",
     description: "Our bespoke animated video tributes combine your cherished photos and video clips with elegant animations, heartfelt music, and personalized text. This service creates a beautiful and lasting digital memorial, perfect for sharing at services or with loved ones online.",
     price: 499.00,
-    images: [
-      "/public/products/video-tribute-1.svg"
-    ],
+    images: [],
     categoryId: "digital-products",
     subcategoryId: "video-tributes",
     productType: "digital",
@@ -291,10 +281,7 @@ export const products: Product[] = [
     shortDescription: "Elegantly designed cards for memorial services and attendees.",
     description: "Offer a beautiful keepsake to those attending a memorial service with our custom-designed cards. Choose from various designs and personalize with photos, verses, and service details. Printed on high-quality card stock.",
     price: 75.00,
-    images: [
-      "/public/products/memorial-card-1.svg",
-      "/public/products/memorial-card-2.svg"
-    ],
+    images: [],
     categoryId: "cards-stationery",
     subcategoryId: "memorial-cards",
     productType: "physical",
@@ -325,9 +312,7 @@ export const products: Product[] = [
     shortDescription: "Express your gratitude with custom-designed notes.",
     description: "Send heartfelt thanks with our personalized thank you notes. Available in various styles, these cards can be customized with a name and message, offering a thoughtful way to acknowledge support during difficult times or after special events.",
     price: 45.00,
-    images: [
-      "/public/products/thank-you-note-1.svg"
-    ],
+    images: [],
     categoryId: "cards-stationery",
     subcategoryId: "memorial-cards",
     productType: "physical",
@@ -357,9 +342,7 @@ export const products: Product[] = [
     shortDescription: "A unique, hand-drawn digital portrait from your favorite photo.",
     description: "Turn a cherished photograph into a beautiful digital portrait. Our artists create a custom, hand-drawn digital illustration perfect for printing, sharing online, or as a unique gift. A timeless piece of art that captures the essence of a memory.",
     price: 120.00,
-    images: [
-      "/public/products/digital-portrait-1.svg"
-    ],
+    images: [],
     categoryId: "digital-products",
     subcategoryId: "digital-art",
     productType: "digital",

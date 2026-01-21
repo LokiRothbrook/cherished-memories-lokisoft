@@ -17,7 +17,12 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="relative bg-card overflow-hidden">
+    <footer 
+      className="relative overflow-hidden backdrop-blur-xl"
+      style={{
+        background: 'linear-gradient(135deg, oklch(0.98 0.02 350 / 0.9) 0%, oklch(0.96 0.03 340 / 0.8) 100%)',
+      }}
+    >
       {/* Decorative Top Border */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary" />
 

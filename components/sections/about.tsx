@@ -5,6 +5,7 @@ import Image from "next/image"
 import { motion, useInView } from "framer-motion"
 import { Users, Trophy, Sparkles, ThumbsUp } from "lucide-react"
 import { aboutSectionContent } from "@/lib/data"
+import { getCardClass } from "@/lib/utils"
 
 export function AboutSection() {
   const ref = React.useRef<HTMLDivElement>(null)
@@ -134,7 +135,7 @@ export function AboutSection() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
-                  className="p-4 rounded-xl glass-card hover:bg-primary/5 transition-colors"
+                  className={`p-4 rounded-xl ${getCardClass(index)} hover:bg-primary/5 transition-colors`}
                 >
                   <h4 className="font-semibold mb-1">{value.title}</h4>
                   <p className="text-sm text-muted-foreground">{value.description}</p>

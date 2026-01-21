@@ -1,23 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
   <defs>
     <linearGradient id="areaBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#fdfbf9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5efe8;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="areaAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#e8a4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b8c4;stop-opacity:1" />
     </linearGradient>
     <radialGradient id="areaGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.3" />
-      <stop offset="70%" style="stop-color:#6366f1;stop-opacity:0.1" />
-      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0" />
+      <stop offset="0%" style="stop-color:#e8a4a8;stop-opacity:0.25" />
+      <stop offset="70%" style="stop-color:#e8a4a8;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#e8a4a8;stop-opacity:0" />
     </radialGradient>
   </defs>
   <rect width="640" height="360" fill="url(#areaBg)"/>
 
+  <!-- Decorative background elements -->
+  <circle cx="100" cy="80" r="60" fill="#ece4f5" opacity="0.3"/>
+  <circle cx="540" cy="280" r="50" fill="#b8e0c8" opacity="0.25"/>
+
   <!-- Grid pattern for map feel -->
-  <g stroke="#6366f1" stroke-width="0.5" opacity="0.15">
+  <g stroke="#e8a4a8" stroke-width="0.5" opacity="0.2">
     <line x1="0" y1="60" x2="640" y2="60"/>
     <line x1="0" y1="120" x2="640" y2="120"/>
     <line x1="0" y1="180" x2="640" y2="180"/>
@@ -31,7 +35,7 @@
   </g>
 
   <!-- Roads -->
-  <g stroke="#374151" stroke-width="6" stroke-linecap="round">
+  <g stroke="#d4c4b0" stroke-width="6" stroke-linecap="round">
     <line x1="50" y1="180" x2="590" y2="180"/>
     <line x1="320" y1="30" x2="320" y2="330"/>
     <line x1="100" y1="80" x2="540" y2="280"/>
@@ -40,14 +44,43 @@
 
   <!-- Service area circle -->
   <circle cx="320" cy="165" r="120" fill="url(#areaGlow)"/>
-  <circle cx="320" cy="165" r="120" fill="none" stroke="url(#areaAccent)" stroke-width="3" stroke-dasharray="15,10" opacity="0.8"/>
+  <circle cx="320" cy="165" r="120" fill="none" stroke="url(#areaAccent)" stroke-width="3" stroke-dasharray="15,10" opacity="0.7"/>
+
+  <!-- Small flower decorations around the service area -->
+  <g fill="#e8a4a8" opacity="0.4">
+    <circle cx="200" cy="100" r="6"/>
+    <circle cx="440" cy="100" r="5"/>
+    <circle cx="180" cy="230" r="5"/>
+    <circle cx="460" cy="230" r="6"/>
+  </g>
 
   <!-- Center location pin -->
   <g transform="translate(320, 145)">
-    <ellipse cx="0" cy="25" rx="10" ry="4" fill="#6366f1" opacity="0.3"/>
+    <ellipse cx="0" cy="25" rx="10" ry="4" fill="#5a4a55" opacity="0.2"/>
     <path d="M0 -20 C-13 -20 -20 -7 -20 7 C-20 20 0 35 0 35 C0 35 20 20 20 7 C20 -7 13 -20 0 -20 Z" fill="url(#areaAccent)"/>
-    <circle cx="0" cy="-3" r="7" fill="#1a1a2e"/>
+    <circle cx="0" cy="-3" r="7" fill="#fdfbf9"/>
+    <!-- Heart inside pin -->
+    <path d="M0 -1 C0 -4 2 -6 4 -4 C6 -6 8 -4 8 -1 C8 3 4 6 4 6 C4 6 0 3 0 -1" transform="translate(-4, -5)" fill="#e8a4a8" opacity="0.8"/>
   </g>
 
-  <text x="320" y="320" font-family="system-ui, sans-serif" font-size="14" fill="#a5b4fc" text-anchor="middle" opacity="0.7">Service Area - Replace with Google Maps screenshot</text>
+  <!-- Decorative corner flowers -->
+  <g transform="translate(50, 40)">
+    <ellipse cx="0" cy="-8" rx="4" ry="7" fill="#e8a4a8" opacity="0.4"/>
+    <ellipse cx="6" cy="-2" rx="4" ry="7" fill="#e8a4a8" opacity="0.35" transform="rotate(72)"/>
+    <ellipse cx="4" cy="6" rx="4" ry="7" fill="#e8a4a8" opacity="0.3" transform="rotate(144)"/>
+    <ellipse cx="-4" cy="6" rx="4" ry="7" fill="#e8a4a8" opacity="0.35" transform="rotate(216)"/>
+    <ellipse cx="-6" cy="-2" rx="4" ry="7" fill="#e8a4a8" opacity="0.4" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="3" fill="#d4a4a8" opacity="0.5"/>
+  </g>
+
+  <g transform="translate(590, 320)">
+    <ellipse cx="0" cy="-8" rx="4" ry="7" fill="#b8e0c8" opacity="0.5"/>
+    <ellipse cx="6" cy="-2" rx="4" ry="7" fill="#b8e0c8" opacity="0.45" transform="rotate(72)"/>
+    <ellipse cx="4" cy="6" rx="4" ry="7" fill="#b8e0c8" opacity="0.4" transform="rotate(144)"/>
+    <ellipse cx="-4" cy="6" rx="4" ry="7" fill="#b8e0c8" opacity="0.45" transform="rotate(216)"/>
+    <ellipse cx="-6" cy="-2" rx="4" ry="7" fill="#b8e0c8" opacity="0.5" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="3" fill="#a0d4b4" opacity="0.6"/>
+  </g>
+
+  <text x="320" y="330" font-family="Georgia, serif" font-size="14" fill="#5a4a55" text-anchor="middle" opacity="0.6">Pittsfield, IL &amp; Surrounding Areas</text>
 </svg>

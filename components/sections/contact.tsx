@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 
-import { formatPhoneNumber } from "@/lib/utils"
+import { formatPhoneNumber, getCardClass } from "@/lib/utils"
 
 // Google Maps directions URL for the business address
 const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(companyInfo.address)}`
@@ -174,7 +174,7 @@ export function ContactSection() {
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
-                  className="flex items-start gap-4 p-4 rounded-xl glass-card hover:border-primary/50 transition-all group"
+                  className={`flex items-start gap-4 p-4 rounded-xl ${getCardClass(index)} hover:border-primary/50 transition-all group`}
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
                     <info.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
@@ -215,7 +215,12 @@ export function ContactSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="lg:col-span-3"
           >
-            <div className="glass-card rounded-2xl p-8 shadow-lg">
+            <div 
+              className="rounded-2xl p-8 shadow-lg backdrop-blur-xl"
+              style={{
+                background: 'linear-gradient(135deg, oklch(0.98 0.02 290 / 0.85) 0%, oklch(0.96 0.03 280 / 0.75) 100%)',
+              }}
+            >
               <h3 className="text-2xl font-bold mb-6">{contactSectionContent.form.title}</h3>
 
               <form onSubmit={handleSubmit} className="space-y-6">

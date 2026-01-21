@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#fdfbf9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5efe8;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="ogAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#e8a4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b8c4;stop-opacity:1" />
     </linearGradient>
     <radialGradient id="ogGlow" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.15" />
-      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0" />
+      <stop offset="0%" style="stop-color:#e8a4a8;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#e8a4a8;stop-opacity:0" />
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#ogBg)"/>
@@ -18,20 +18,72 @@
   <!-- Background glow -->
   <ellipse cx="600" cy="315" rx="500" ry="300" fill="url(#ogGlow)"/>
 
-  <!-- Decorative border -->
-  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="url(#ogAccent)" stroke-width="2" opacity="0.3"/>
+  <!-- Decorative background circles -->
+  <circle cx="150" cy="100" r="120" fill="#ece4f5" opacity="0.2"/>
+  <circle cx="1050" cy="530" r="100" fill="#b8e0c8" opacity="0.2"/>
+  <circle cx="1000" cy="120" r="80" fill="#e8a4a8" opacity="0.1"/>
+  <circle cx="200" cy="500" r="90" fill="#ece4f5" opacity="0.15"/>
 
-  <!-- Logo placeholder -->
-  <g transform="translate(600, 200)">
-    <circle cx="0" cy="0" r="60" fill="url(#ogAccent)" opacity="0.2"/>
-    <rect x="-30" y="-30" width="60" height="60" rx="12" fill="url(#ogAccent)"/>
-    <path d="M-15 0 L0 -18 L15 0 L15 15 L-15 15 Z" fill="#1a1a2e"/>
+  <!-- Decorative border -->
+  <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="#e8a4a8" stroke-width="2" opacity="0.3"/>
+
+  <!-- Flower decorations - top left -->
+  <g transform="translate(100, 100)">
+    <ellipse cx="0" cy="-15" rx="8" ry="14" fill="#e8a4a8" opacity="0.5"/>
+    <ellipse cx="13" cy="-5" rx="8" ry="14" fill="#e8a4a8" opacity="0.45" transform="rotate(72)"/>
+    <ellipse cx="8" cy="12" rx="8" ry="14" fill="#e8a4a8" opacity="0.4" transform="rotate(144)"/>
+    <ellipse cx="-8" cy="12" rx="8" ry="14" fill="#e8a4a8" opacity="0.45" transform="rotate(216)"/>
+    <ellipse cx="-13" cy="-5" rx="8" ry="14" fill="#e8a4a8" opacity="0.5" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="6" fill="#d4a4a8" opacity="0.6"/>
   </g>
 
-  <!-- Company name placeholder -->
-  <text x="600" y="320" font-family="system-ui, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="700">Your Company Name</text>
-  <text x="600" y="370" font-family="system-ui, sans-serif" font-size="24" fill="#a5b4fc" text-anchor="middle">Your tagline goes here</text>
+  <!-- Flower decorations - top right -->
+  <g transform="translate(1100, 120)">
+    <ellipse cx="0" cy="-12" rx="6" ry="10" fill="#b8e0c8" opacity="0.5"/>
+    <ellipse cx="10" cy="-4" rx="6" ry="10" fill="#b8e0c8" opacity="0.45" transform="rotate(72)"/>
+    <ellipse cx="6" cy="9" rx="6" ry="10" fill="#b8e0c8" opacity="0.4" transform="rotate(144)"/>
+    <ellipse cx="-6" cy="9" rx="6" ry="10" fill="#b8e0c8" opacity="0.45" transform="rotate(216)"/>
+    <ellipse cx="-10" cy="-4" rx="6" ry="10" fill="#b8e0c8" opacity="0.5" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="5" fill="#a0d4b4" opacity="0.6"/>
+  </g>
 
-  <!-- Instructions -->
-  <text x="600" y="550" font-family="system-ui, sans-serif" font-size="16" fill="#6366f1" text-anchor="middle" opacity="0.6">Replace with your branded Open Graph image (1200x630)</text>
+  <!-- Flower decorations - bottom left -->
+  <g transform="translate(120, 530)">
+    <ellipse cx="0" cy="-10" rx="5" ry="9" fill="#ece4f5" opacity="0.6"/>
+    <ellipse cx="8" cy="-3" rx="5" ry="9" fill="#ece4f5" opacity="0.55" transform="rotate(72)"/>
+    <ellipse cx="5" cy="8" rx="5" ry="9" fill="#ece4f5" opacity="0.5" transform="rotate(144)"/>
+    <ellipse cx="-5" cy="8" rx="5" ry="9" fill="#ece4f5" opacity="0.55" transform="rotate(216)"/>
+    <ellipse cx="-8" cy="-3" rx="5" ry="9" fill="#ece4f5" opacity="0.6" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="4" fill="#d8cce8" opacity="0.7"/>
+  </g>
+
+  <!-- Flower decorations - bottom right -->
+  <g transform="translate(1080, 510)">
+    <ellipse cx="0" cy="-12" rx="6" ry="11" fill="#e8a4a8" opacity="0.45"/>
+    <ellipse cx="10" cy="-4" rx="6" ry="11" fill="#e8a4a8" opacity="0.4" transform="rotate(72)"/>
+    <ellipse cx="6" cy="10" rx="6" ry="11" fill="#e8a4a8" opacity="0.35" transform="rotate(144)"/>
+    <ellipse cx="-6" cy="10" rx="6" ry="11" fill="#e8a4a8" opacity="0.4" transform="rotate(216)"/>
+    <ellipse cx="-10" cy="-4" rx="6" ry="11" fill="#e8a4a8" opacity="0.45" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="5" fill="#d4a4a8" opacity="0.5"/>
+  </g>
+
+  <!-- Heart logo -->
+  <g transform="translate(600, 200)">
+    <circle cx="0" cy="0" r="70" fill="#e8a4a8" opacity="0.15"/>
+    <path d="M0 25 C0 -10 25 -35 50 -15 C75 -35 100 -10 100 25 C100 65 50 95 50 95 C50 95 0 65 0 25" transform="translate(-50, -30)" fill="url(#ogAccent)" opacity="0.8"/>
+  </g>
+
+  <!-- Company name -->
+  <text x="600" y="340" font-family="Georgia, serif" font-size="56" fill="#5a4a55" text-anchor="middle" font-weight="600">Cherished Memories</text>
+  <text x="600" y="390" font-family="Georgia, serif" font-size="26" fill="#5a4a55" text-anchor="middle" opacity="0.7">Crafting memories, celebrating life.</text>
+
+  <!-- Decorative line -->
+  <line x1="400" y1="420" x2="800" y2="420" stroke="#e8a4a8" stroke-width="2" opacity="0.4"/>
+
+  <!-- Tagline/services hint -->
+  <text x="600" y="470" font-family="Georgia, serif" font-size="18" fill="#5a4a55" text-anchor="middle" opacity="0.5">Custom Memorial Videos | Personalized Keepsakes | Event Planning</text>
+
+  <!-- Small hearts decoration -->
+  <path d="M250 300 C250 292 258 286 266 294 C274 286 282 292 282 300 C282 312 266 322 266 322 C266 322 250 312 250 300" fill="#e8a4a8" opacity="0.2"/>
+  <path d="M920 280 C920 274 926 270 932 276 C938 270 944 274 944 280 C944 289 932 296 932 296 C932 296 920 289 920 280" fill="#b8e0c8" opacity="0.25"/>
 </svg>

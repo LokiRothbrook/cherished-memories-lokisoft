@@ -8,6 +8,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CtaSection } from "@/components/sections/cta"
 import { getIcon } from "@/lib/icon-map"
+import { getCardClass } from "@/lib/utils"
+import { FloralBackground } from "@/components/ui/floral-background"
 
 export default function ServicesPage() {
   return (
@@ -18,6 +20,7 @@ export default function ServicesPage() {
         <section className="relative py-24 overflow-hidden">
           {/* Background */}
           <div className="absolute inset-0 water-pattern" />
+          <FloralBackground />
           <motion.div
             className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[150px]"
             animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
@@ -60,7 +63,7 @@ export default function ServicesPage() {
                                   transition={{ delay: index * 0.1 }}
                                 >
                                   <Link href={`/services/${service.id}`} className="group block h-full">
-                                    <div className="relative h-full p-8 rounded-2xl glass-card hover:border-primary/50 transition-all duration-500 overflow-hidden">
+                                    <div className={`relative h-full p-8 rounded-2xl ${getCardClass(index)} hover:border-primary/50 transition-all duration-500 overflow-hidden`}>
                                       {/* Hover Background */}
                                       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               

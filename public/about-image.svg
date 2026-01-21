@@ -1,115 +1,100 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0c1929;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#fdfbf9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5efe8;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#e8a4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4b8c4;stop-opacity:1" />
     </linearGradient>
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-    </pattern>
   </defs>
 
   <!-- Background -->
   <rect width="800" height="800" fill="url(#bgGrad)"/>
-  <rect width="800" height="800" fill="url(#gridPattern)"/>
 
-  <!-- Abstract shapes representing growth/excellence -->
-  <g opacity="0.1">
-    <circle cx="650" cy="150" r="200" fill="#3b82f6"/>
-    <circle cx="150" cy="650" r="150" fill="#60a5fa"/>
+  <!-- Decorative background shapes -->
+  <circle cx="650" cy="150" r="150" fill="#ece4f5" opacity="0.2"/>
+  <circle cx="150" cy="650" r="120" fill="#b8e0c8" opacity="0.2"/>
+  <circle cx="700" cy="600" r="100" fill="#e8a4a8" opacity="0.1"/>
+  <circle cx="100" cy="200" r="80" fill="#ece4f5" opacity="0.15"/>
+
+  <!-- Decorative flowers - scattered -->
+  <g transform="translate(100, 120)">
+    <ellipse cx="0" cy="-12" rx="6" ry="10" fill="#e8a4a8" opacity="0.5"/>
+    <ellipse cx="10" cy="-4" rx="6" ry="10" fill="#e8a4a8" opacity="0.45" transform="rotate(72)"/>
+    <ellipse cx="6" cy="9" rx="6" ry="10" fill="#e8a4a8" opacity="0.4" transform="rotate(144)"/>
+    <ellipse cx="-6" cy="9" rx="6" ry="10" fill="#e8a4a8" opacity="0.45" transform="rotate(216)"/>
+    <ellipse cx="-10" cy="-4" rx="6" ry="10" fill="#e8a4a8" opacity="0.5" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="5" fill="#d4a4a8" opacity="0.6"/>
   </g>
 
-  <!-- Office building silhouette -->
-  <g transform="translate(200, 250)">
-    <!-- Main building -->
-    <rect x="100" y="150" width="200" height="300" fill="#2d4a6f" rx="4"/>
-    <!-- Windows -->
-    <g fill="#4a7ab0">
-      <rect x="120" y="180" width="30" height="40" rx="2"/>
-      <rect x="170" y="180" width="30" height="40" rx="2"/>
-      <rect x="220" y="180" width="30" height="40" rx="2"/>
-      <rect x="260" y="180" width="30" height="40" rx="2"/>
-
-      <rect x="120" y="240" width="30" height="40" rx="2"/>
-      <rect x="170" y="240" width="30" height="40" rx="2"/>
-      <rect x="220" y="240" width="30" height="40" rx="2"/>
-      <rect x="260" y="240" width="30" height="40" rx="2"/>
-
-      <rect x="120" y="300" width="30" height="40" rx="2"/>
-      <rect x="170" y="300" width="30" height="40" rx="2"/>
-      <rect x="220" y="300" width="30" height="40" rx="2"/>
-      <rect x="260" y="300" width="30" height="40" rx="2"/>
-
-      <rect x="120" y="360" width="30" height="40" rx="2"/>
-      <rect x="170" y="360" width="30" height="40" rx="2"/>
-      <rect x="220" y="360" width="30" height="40" rx="2"/>
-      <rect x="260" y="360" width="30" height="40" rx="2"/>
-    </g>
-    <!-- Door -->
-    <rect x="175" y="400" width="50" height="50" fill="#1a365d" rx="2"/>
-
-    <!-- Side building left -->
-    <rect x="0" y="250" width="80" height="200" fill="#243b53" rx="4"/>
-    <g fill="#3d5a7a">
-      <rect x="15" y="270" width="20" height="30" rx="2"/>
-      <rect x="45" y="270" width="20" height="30" rx="2"/>
-      <rect x="15" y="320" width="20" height="30" rx="2"/>
-      <rect x="45" y="320" width="20" height="30" rx="2"/>
-      <rect x="15" y="370" width="20" height="30" rx="2"/>
-      <rect x="45" y="370" width="20" height="30" rx="2"/>
-    </g>
-
-    <!-- Side building right -->
-    <rect x="320" y="300" width="80" height="150" fill="#243b53" rx="4"/>
-    <g fill="#3d5a7a">
-      <rect x="335" y="320" width="20" height="30" rx="2"/>
-      <rect x="365" y="320" width="20" height="30" rx="2"/>
-      <rect x="335" y="370" width="20" height="30" rx="2"/>
-      <rect x="365" y="370" width="20" height="30" rx="2"/>
-    </g>
+  <g transform="translate(700, 100)">
+    <ellipse cx="0" cy="-10" rx="5" ry="8" fill="#b8e0c8" opacity="0.5"/>
+    <ellipse cx="8" cy="-3" rx="5" ry="8" fill="#b8e0c8" opacity="0.45" transform="rotate(72)"/>
+    <ellipse cx="5" cy="7" rx="5" ry="8" fill="#b8e0c8" opacity="0.4" transform="rotate(144)"/>
+    <ellipse cx="-5" cy="7" rx="5" ry="8" fill="#b8e0c8" opacity="0.45" transform="rotate(216)"/>
+    <ellipse cx="-8" cy="-3" rx="5" ry="8" fill="#b8e0c8" opacity="0.5" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="4" fill="#a0d4b4" opacity="0.6"/>
   </g>
 
-  <!-- Team/People icons -->
-  <g transform="translate(250, 620)">
-    <!-- Person 1 -->
-    <circle cx="50" cy="20" r="25" fill="#4a7ab0"/>
-    <rect x="25" y="55" width="50" height="60" rx="10" fill="#4a7ab0"/>
-
-    <!-- Person 2 (center, larger) -->
-    <circle cx="150" cy="10" r="30" fill="#3b82f6"/>
-    <rect x="120" y="50" width="60" height="70" rx="12" fill="#3b82f6"/>
-
-    <!-- Person 3 -->
-    <circle cx="250" cy="20" r="25" fill="#4a7ab0"/>
-    <rect x="225" y="55" width="50" height="60" rx="10" fill="#4a7ab0"/>
+  <g transform="translate(680, 700)">
+    <ellipse cx="0" cy="-10" rx="5" ry="9" fill="#ece4f5" opacity="0.6"/>
+    <ellipse cx="8" cy="-3" rx="5" ry="9" fill="#ece4f5" opacity="0.55" transform="rotate(72)"/>
+    <ellipse cx="5" cy="8" rx="5" ry="9" fill="#ece4f5" opacity="0.5" transform="rotate(144)"/>
+    <ellipse cx="-5" cy="8" rx="5" ry="9" fill="#ece4f5" opacity="0.55" transform="rotate(216)"/>
+    <ellipse cx="-8" cy="-3" rx="5" ry="9" fill="#ece4f5" opacity="0.6" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="4" fill="#d8cce8" opacity="0.7"/>
   </g>
 
-  <!-- Decorative accent lines -->
-  <g stroke="url(#accentGrad)" stroke-width="3" fill="none" opacity="0.6">
-    <path d="M 50 400 Q 100 350 150 400" />
-    <path d="M 650 400 Q 700 350 750 400" />
+  <g transform="translate(120, 680)">
+    <ellipse cx="0" cy="-10" rx="5" ry="8" fill="#e8a4a8" opacity="0.45"/>
+    <ellipse cx="8" cy="-3" rx="5" ry="8" fill="#e8a4a8" opacity="0.4" transform="rotate(72)"/>
+    <ellipse cx="5" cy="7" rx="5" ry="8" fill="#e8a4a8" opacity="0.35" transform="rotate(144)"/>
+    <ellipse cx="-5" cy="7" rx="5" ry="8" fill="#e8a4a8" opacity="0.4" transform="rotate(216)"/>
+    <ellipse cx="-8" cy="-3" rx="5" ry="8" fill="#e8a4a8" opacity="0.45" transform="rotate(288)"/>
+    <circle cx="0" cy="0" r="4" fill="#d4a4a8" opacity="0.5"/>
   </g>
 
-  <!-- Stars/excellence symbols -->
-  <g fill="#60a5fa" opacity="0.4">
-    <polygon points="100,100 105,115 120,115 108,125 113,140 100,130 87,140 92,125 80,115 95,115" />
-    <polygon points="700,150 705,165 720,165 708,175 713,190 700,180 687,190 692,175 680,165 695,165" />
-    <polygon points="680,650 683,660 695,660 686,668 689,680 680,672 671,680 674,668 665,660 677,660" />
+  <!-- Main illustration - Family/Hands holding heart -->
+  <g transform="translate(400, 350)">
+    <!-- Large heart in center -->
+    <path d="M0 50 C0 -20 50 -70 100 -30 C150 -70 200 -20 200 50 C200 130 100 190 100 190 C100 190 0 130 0 50" transform="translate(-100, -60)" fill="url(#accentGrad)" opacity="0.3"/>
+    <path d="M0 40 C0 -10 40 -50 80 -20 C120 -50 160 -10 160 40 C160 100 80 150 80 150 C80 150 0 100 0 40" transform="translate(-80, -40)" fill="url(#accentGrad)" opacity="0.5"/>
+    <path d="M0 30 C0 0 30 -30 60 -10 C90 -30 120 0 120 30 C120 70 60 100 60 100 C60 100 0 70 0 30" transform="translate(-60, -20)" fill="url(#accentGrad)" opacity="0.8"/>
   </g>
 
-  <!-- Upward trending graph line (representing growth) -->
-  <g transform="translate(500, 200)" opacity="0.3">
-    <polyline points="0,100 30,80 60,90 90,50 120,60 150,20"
-              stroke="#60a5fa" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="150" cy="20" r="8" fill="#60a5fa"/>
+  <!-- Decorative elements around heart -->
+  <!-- Left side decorative curves -->
+  <path d="M150 350 Q100 300 150 250" stroke="#b8e0c8" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M170 380 Q110 320 170 260" stroke="#b8e0c8" stroke-width="2" fill="none" opacity="0.3"/>
+
+  <!-- Right side decorative curves -->
+  <path d="M650 350 Q700 300 650 250" stroke="#b8e0c8" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M630 380 Q690 320 630 260" stroke="#b8e0c8" stroke-width="2" fill="none" opacity="0.3"/>
+
+  <!-- Small hearts scattered -->
+  <path d="M200 200 C200 190 210 183 218 193 C226 183 236 190 236 200 C236 215 218 227 218 227 C218 227 200 215 200 200" fill="#e8a4a8" opacity="0.3"/>
+  <path d="M580 220 C580 213 587 208 593 215 C599 208 606 213 606 220 C606 230 593 239 593 239 C593 239 580 230 580 220" fill="#ece4f5" opacity="0.4"/>
+  <path d="M220 500 C220 494 226 490 231 495 C236 490 242 494 242 500 C242 508 231 515 231 515 C231 515 220 508 220 500" fill="#b8e0c8" opacity="0.4"/>
+  <path d="M560 480 C560 472 569 465 577 475 C585 465 594 472 594 480 C594 493 577 503 577 503 C577 503 560 493 560 480" fill="#e8a4a8" opacity="0.25"/>
+
+  <!-- Ribbon/banner below heart -->
+  <g transform="translate(400, 520)">
+    <path d="M-150 0 Q-120 20 -80 0 L80 0 Q120 20 150 0 L140 30 Q100 10 80 30 L-80 30 Q-100 10 -140 30 Z" fill="#ece4f5" opacity="0.5"/>
+    <text x="0" y="22" font-family="Georgia, serif" font-size="18" fill="#5a4a55" text-anchor="middle" opacity="0.7">Family Owned</text>
   </g>
 
-  <!-- Text placeholder area indicator -->
-  <text x="400" y="780" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="system-ui, sans-serif" font-size="12">
-    Replace with actual business image
-  </text>
+  <!-- Bottom text area -->
+  <text x="400" y="620" font-family="Georgia, serif" font-size="28" fill="#5a4a55" text-anchor="middle" font-weight="500">Crafting Memories with Love</text>
+  <text x="400" y="660" font-family="Georgia, serif" font-size="16" fill="#5a4a55" text-anchor="middle" opacity="0.6">Serving families in Pittsfield and beyond</text>
+
+  <!-- Decorative line -->
+  <line x1="300" y1="700" x2="500" y2="700" stroke="#e8a4a8" stroke-width="2" opacity="0.4"/>
+
+  <!-- Leaf decorations -->
+  <g fill="#b8e0c8" opacity="0.3">
+    <path d="M50 400 Q70 380 60 350 Q80 370 50 400"/>
+    <path d="M750 400 Q730 380 740 350 Q720 370 750 400"/>
+  </g>
 </svg>

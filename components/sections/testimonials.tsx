@@ -4,6 +4,7 @@ import * as React from "react"
 import { motion, useInView } from "framer-motion"
 import { Star, Quote } from "lucide-react"
 import { testimonials, testimonialsSectionContent } from "@/lib/data"
+import { getCardClass } from "@/lib/utils"
 
 function TestimonialCard({ testimonial, index }: { testimonial: typeof testimonials[0]; index: number }) {
   const cardContent = (
@@ -11,7 +12,7 @@ function TestimonialCard({ testimonial, index }: { testimonial: typeof testimoni
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}
-      className="relative h-full p-6 rounded-2xl glass-card hover:border-primary/30 transition-all duration-300 group"
+      className={`relative h-full p-6 rounded-2xl ${getCardClass(index)} hover:border-primary/30 transition-all duration-300 group`}
     >
       {/* Quote Icon */}
       <div className="absolute -top-3 -left-3 w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg glow-blue">
